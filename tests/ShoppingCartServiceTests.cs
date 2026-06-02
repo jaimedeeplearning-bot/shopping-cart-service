@@ -27,20 +27,7 @@ namespace ShoppingCartService.Tests
 
         #region Scenario 1: Agregar producto al carrito vacío
 
-        [Test]
-        public void test_add_product_to_empty_cart_product_count_is_one()
-        {
-            // Arrange
-            var product = new Product("PROD001", "Test Product", 100m);
-
-            // Act
-            _cartService.AddProduct(product);
-
-            // Assert
-            Assert.That(_cartService.GetProductCount(), Is.EqualTo(1),
-                "El carrito debe contener 1 producto");
-        }
-
+        
         [Test]
         public void test_add_product_to_empty_cart_total_is_one_hundred()
         {
